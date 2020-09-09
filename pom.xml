@@ -20,13 +20,18 @@
 	</properties>
 	<repositories>
 	    <repository>
-	        <id>spring-libs-milestone</id>
-	        <name>Spring Milestone Maven Repository</name>
-	        <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
+	        <id>swagger</id>
+	        <name>swagger</name>
+	        <url>http://oss.jfrog.org/artifactory/oss-snapshot-local</url>
 	    </repository>
 	</repositories>
 
 	<dependencies>
+		<dependency>
+		  <groupId>io.springfox</groupId>
+		  <artifactId>springfox-data-rest</artifactId>
+		  <version>${springfox.version}</version>
+		</dependency>
 		<dependency>
 	        <groupId>io.springfox</groupId>
 	        <artifactId>springfox-swagger2</artifactId>
