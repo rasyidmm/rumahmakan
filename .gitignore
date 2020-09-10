@@ -1,7 +1,7 @@
 HELP.md
 attach_pid*
-./target/classes/
-./target/maven-status/
+/target/classes/
+/target/maven-status/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
