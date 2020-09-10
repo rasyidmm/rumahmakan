@@ -14,7 +14,12 @@ public class JenisMakananService {
 	DaoFac dao;
 	
 	public void addJenis(JenisMakanan jenisMakanan) throws Exception {
-		dao.getJenisMakananDao().save(jenisMakanan);		
+		try {
+			dao.getJenisMakananDao().save(jenisMakanan);
+		} catch (Exception e) {
+			e.getMessage();
+		}
+				
 	}
 
 	public List<JenisMakanan> getAll() {
@@ -22,6 +27,7 @@ public class JenisMakananService {
 	}
 
 	public JenisMakanan getById(UUID id) {
+		
 		return dao.getJenisMakananDao().getById(id);
 	}
 

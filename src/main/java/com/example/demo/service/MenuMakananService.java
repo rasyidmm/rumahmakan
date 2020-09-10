@@ -54,7 +54,7 @@ public class MenuMakananService {
 			dao.getMenuMakananDao().delete(makananModel);
 			
 		} catch (Exception e) {
-			
+			e.getMessage();
 		}
 		
 	}

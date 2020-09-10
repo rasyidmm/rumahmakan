@@ -30,7 +30,7 @@ public class PembayaranController {
 			PojoDetailPembayaran dibayar = service.getPembayaranService().Pembayaran(id);
 			result.setSuccess(true);
 			result.setDatas(dibayar);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Pembayaran Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);

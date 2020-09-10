@@ -71,7 +71,7 @@ public class JenisMakananController {
 		try {
 			service.getJenisMakananService().getUpdate(jenisMakanan);
 			result.setSuccess(true);
-			result.setMessage("Get All Jenis Makanan Sukses");
+			result.setMessage("Update Jenis Makanan Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);
@@ -87,7 +87,7 @@ public class JenisMakananController {
 		try {
 			JenisMakanan item = service.getJenisMakananService().getById(id);
 			result.setSuccess(true);
-			result.setMessage("Get All Jenis Makanan Sukses");
+			result.setMessage("Get By Id Jenis Makanan Sukses");
 			result.setDatas(item);
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
@@ -103,7 +103,7 @@ public class JenisMakananController {
 		try {
 			service.getJenisMakananService().delete(id);
 			result.setSuccess(true);
-			result.setMessage("Get All Jenis Makanan Sukses");
+			result.setMessage("Delete Jenis Makanan Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);

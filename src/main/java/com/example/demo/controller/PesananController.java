@@ -36,7 +36,7 @@ public class PesananController {
 		try {
 			service.getPesananService().add(pesanan);
 			result.setSuccess(true);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Add Pesanan Sukses");
 			result.setDatas(pesanan);
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
@@ -54,7 +54,7 @@ public class PesananController {
 		try {
 			List<PesananModel> list = service.getPesananService().getAll();
 			result.setSuccess(true);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Get Pesanan Sukses");
 			result.setDatas(list);
 			result.setCount((long) list.size());
 			return ResponseEntity.ok(result);
@@ -71,7 +71,7 @@ public class PesananController {
 		try {
 			service.getPesananService().update(pesanan);
 			result.setSuccess(true);
-			result.setMessage("Get All Jenis Makanan Sukses");
+			result.setMessage("Update Pesanan Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);
@@ -87,7 +87,7 @@ public class PesananController {
 		try {
 			PesananModel data = service.getPesananService().getById(id);
 			result.setSuccess(true);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Get By Id Sukses");
 			result.setDatas(data);
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
@@ -103,7 +103,7 @@ public class PesananController {
 		try {
 			service.getPesananService().delete(id);
 			result.setSuccess(true);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Delete pesanan Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);
@@ -118,7 +118,7 @@ public class PesananController {
 		try {
 			service.getPesananService().pesananDone(id);
 			result.setSuccess(true);
-			result.setMessage("Add Jenis Makanan Sukses");
+			result.setMessage("Change Status Pesanan Done Sukses");
 			return ResponseEntity.ok(result);
 		} catch (Exception e) {
 			result.setSuccess(false);
