@@ -24,7 +24,7 @@ public class PembayaranController {
 	RestResponse result;
 	@SuppressWarnings("unchecked")
 	@PutMapping(value = "/{id}")
-	ResponseEntity<?>PesananDone(@PathVariable UUID id){
+	ResponseEntity<?>PembayaranByIdPelanggan(@PathVariable UUID id){
 		result = new RestResponse<>();
 		try {
 			PojoDetailPembayaran dibayar = service.getPembayaranService().Pembayaran(id);
