@@ -1,5 +1,5 @@
 HELP.md
-target/
+attach_pid
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
